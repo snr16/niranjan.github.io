@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niranjan's Portfolio</title>
+    <title>Home - Portfolio</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="static/css/style.css">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#home">Niranjan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -21,13 +29,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item">
-                        <button id="theme-toggle" class="btn btn-link nav-link">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn btn-outline-light ms-2">
                             <i class="fas fa-moon"></i>
                         </button>
                     </li>
@@ -36,178 +54,512 @@
         </div>
     </nav>
 
+    <!-- Main Content -->
+    <main>
+        
+<!-- Hero Section -->
+<section id="home" class="hero-section">
     <div class="container">
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <h1 class="hero-text">Hi, I'm <span>Niranjan</span></h1>
-                    <h2 class="subtitle">Software Engineer</h2>
-                    <p class="lead">Passionate about building innovative solutions and learning new technologies.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/snr16" class="btn btn-outline-primary me-2" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://linkedin.com/in/niranjan" class="btn btn-outline-primary" target="_blank">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image">
-                        <img src="static/images/your-profile-image.jpg" alt="Niranjan" class="img-fluid">
-                    </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="hero-text display-4 mb-4">Hi, I'm <span>Niranjan</span></h1>
+                <h2 class="h3 mb-4">Machine Learning Engineer</h2>
+                <p class="lead mb-4">A passionate developer with expertise in web development and machine learning.</p>
+                <div class="social-links mb-4">
+                    <a href="https://github.com/snr16" class="btn btn-outline-primary me-2" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/niranjansadula" class="btn btn-outline-primary" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
                 </div>
             </div>
-        </section>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <img src="/static/images/your-profile-image.jpg" alt="Niranjan">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <h2 class="section-title">About Me</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <p class="about-summary">I am a passionate software engineer with expertise in various technologies.</p>
-                        
-                        <div class="about-details">
-                            <div class="interests">
-                                <h3>Interests</h3>
-                                <ul>
-                                    <li>Web Development</li>
-                                    <li>Machine Learning</li>
-                                    <li>Cloud Computing</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="values">
-                                <h3>Core Values</h3>
-                                <ul>
-                                    <li>Continuous Learning</li>
-                                    <li>Problem Solving</li>
-                                    <li>Team Collaboration</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="fun-facts">
-                            <h3>Fun Facts</h3>
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <p class="about-summary">I am a dedicated Machine Learning Engineer with a strong foundation in computer science and a passion for creating innovative solutions. With expertise in both machine learning and software development, I strive to build scalable and intelligent applications that solve real-world problems.</p>
+                    
+                    <div class="about-details">
+                        <div class="interests">
+                            <h3>Interests</h3>
                             <ul>
-                                <li>Love to solve coding challenges</li>
-                                <li>Avid reader of tech blogs</li>
-                                <li>Enjoy contributing to open source</li>
+                                
+                                <li>Machine Learning</li>
+                                
+                                <li>Deep Learning</li>
+                                
+                                <li>Natural Language Processing</li>
+                                
+                                <li>Computer Vision</li>
+                                
+                                <li>Big Data Technologies</li>
+                                
+                                <li>Cloud Computing</li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="values">
+                            <h3>Core Values</h3>
+                            <ul>
+                                
+                                <li>Continuous Learning</li>
+                                
+                                <li>Problem Solving</li>
+                                
+                                <li>Innovation</li>
+                                
+                                <li>Collaboration</li>
+                                
+                                <li>Clean Code</li>
+                                
+                                <li>User-Centric Design</li>
+                                
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="education-content">
-                        <h3>Education</h3>
-                        <div class="education-card">
-                            <h4>University Name</h4>
-                            <p class="text-primary">Bachelor of Technology</p>
-                            <p class="text-secondary">2016 - 2020</p>
-                            <p>GPA: 8.5/10</p>
-                        </div>
+
+                    <div class="fun-facts">
+                        <h3>Fun Facts</h3>
+                        <ul>
+                            
+                            <li>I love exploring new machine learning algorithms and implementing them in real-world applications</li>
+                            
+                            <li>I enjoy participating in Kaggle competitions to sharpen my data science skills</li>
+                            
+                            <li>I maintain a tech blog where I share my learning journey and insights about AI</li>
+                            
+                            <li>I am passionate about mentoring others and helping them grow in their tech careers</li>
+                            
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="col-lg-6">
+                <div class="education-content">
+                    <h3 class="mb-4">Education</h3>
+                    
+                    <div class="education-card">
+                        <h4>Stevens Institute of Technology</h4>
+                        <p class="text-primary">Master of Science in Machine Learning</p>
+                        <p class="text-secondary">Aug 2023 - Dec 2024</p>
+                        <p>GPA: 3.87/4.0</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <h4>Indian Institute of Technology, Patna</h4>
+                        <p class="text-primary">Bachelor of Technology in Electrical Engineering</p>
+                        <p class="text-secondary">Aug 2017 - Jul 2021</p>
+                        <p>GPA: 3.3/4.0</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020 - Present</div>
-                        <h3>Software Engineer</h3>
-                        <h4>Company Name</h4>
-                        <div class="timeline-details">
-                            <ul class="achievements-list">
-                                <li>Developed and maintained web applications</li>
-                                <li>Implemented new features and fixed bugs</li>
-                                <li>Collaborated with cross-functional teams</li>
-                            </ul>
-                        </div>
+<!-- Experience Section -->
+<section id="experience" class="experience-section">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-timeline">
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Jan 2022 - Aug 2023</div>
+                    <h3>Machine Learning Engineer</h3>
+                    <h4>Quantiphi Inc.</h4>
+                    <div class="timeline-details">
+                        <ul class="achievements-list">
+                            
+                            <li>Engineered scalable event-driven workflows using Google Cloud Functions, Cloud Storage, and BigQuery, reducing data redundancy by 30% and boosting processing speeds by 50%</li>
+                            
+                            <li>Deployed automated solutions via Google Document AI, reducing average processing duration from 30 minutes to 10 minutes per document</li>
+                            
+                            <li>Implemented event-driven triggers with Kafka and automated ETL workflows using Airflow and Cloud Dataflow, reducing system latency by 50%</li>
+                            
+                            <li>Designed and deployed a real-time alerting and monitoring system using Google Cloud Monitoring and Logging, reducing failure detection time by 70%</li>
+                            
+                            <li>Researched deep learning techniques for healthcare use cases, including AI-assisted medical imaging and patient readmission prediction</li>
+                            
+                            <li>Leveraged AlphaFold for protein structure prediction, improving drug efficacy analysis by 30%</li>
+                            
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Sep 2021 - Dec 2021</div>
+                    <h3>Machine Learning Intern</h3>
+                    <h4>Quantiphi Inc.</h4>
+                    <div class="timeline-details">
+                        <ul class="achievements-list">
+                            
+                            <li>Developed an AI-driven vehicle damage assessment system, enhancing accuracy by 20% with inference speed under 250ms</li>
+                            
+                            <li>Created a scalable ML pipeline using TensorFlow, MLflow, and Prometheus, ensuring 95% reproducibility</li>
+                            
+                            <li>Optimized ML pipelines and enhanced model efficiency with TensorFlow implementation</li>
+                            
+                            <li>Analyzed 10+ state-of-the-art research papers during an intensive 4-month trainee program</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <h2 class="section-title">Projects</h2>
-            <div class="row" id="projects-container">
-                <div class="col-lg-4 mb-4 project-item">
-                    <div class="project-card">
-                        <div class="project-image">
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="row" id="projects-container">
+            
+            <div class="col-lg-4 mb-4 project-item">
+                <div class="project-card" data-github="https://github.com/snr16/fitness-tracker">
+                    <div class="project-image">
+                        
                             <div class="project-icon">
                                 <i class="fas fa-project-diagram"></i>
                             </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project Name</h3>
-                            <p class="project-tech">Python, JavaScript, React</p>
-                            <p class="project-description">Description of your project...</p>
-                            <a href="#" class="btn btn-outline-primary mt-3" target="_blank">
-                                <i class="fab fa-github"></i> View Project
-                            </a>
-                        </div>
+                        
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI-Powered Fitness Tracker and Health Monitoring Bot</h3>
+                        <p class="project-tech">Python, GCP, Docker, LLM, Langchain</p>
+                        <p class="project-description">Developed an AI-driven health monitoring bot using WHOOP API, Google Cloud, and LLMs, generating personalized insights with visualizations, reducing manual reporting by 15 hours per week, and improving user engagement.</p>
+                        <a href="https://github.com/snr16/fitness-tracker" class="btn btn-outline-primary mt-3" target="_blank">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <div class="col-lg-4 mb-4 project-item">
+                <div class="project-card" data-github="https://github.com/snr16/drug-effects-analysis">
+                    <div class="project-image">
+                        
+                            <div class="project-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                        
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Analysis of Adverse Drug Effects Using Big Data</h3>
+                        <p class="project-tech">Apache Airflow, MLFlow, DataBricks</p>
+                        <p class="project-description">Streamlined an ELT pipeline with Apache Airflow to process 100GB of openFDA JSON data, optimizing Parquet-based storage and enhancing ML model performance, achieving 92% accuracy with a fine-tuned Multi-Layer Perceptron (MLP) model.</p>
+                        <a href="https://github.com/snr16/drug-effects-analysis" class="btn btn-outline-primary mt-3" target="_blank">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4 project-item">
+                <div class="project-card" data-github="https://github.com/snr16/image-classification">
+                    <div class="project-image">
+                        
+                            <div class="project-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                        
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Multilabel Image Classification</h3>
+                        <p class="project-tech">Python, PyTorch, Sklearn, Pandas, CV2, PIL, Matplotlib</p>
+                        <p class="project-description">Designed and fine-tuned a ResNet-50 model for multi-label face attribute classification on the CelebA dataset, achieving 90% validation accuracy and a 20% F1-score boost through advanced hyperparameter tuning.</p>
+                        <a href="https://github.com/snr16/image-classification" class="btn btn-outline-primary mt-3" target="_blank">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4 project-item">
+                <div class="project-card" data-github="https://github.com/snr16/conversational-ai">
+                    <div class="project-image">
+                        
+                            <div class="project-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                        
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">ConversationalAI with RAG &amp; LLMs</h3>
+                        <p class="project-tech">Python, LLM, Streamlit, Llamaindex</p>
+                        <p class="project-description">Engineered a context-aware chatbot leveraging Retrieval-Augmented Generation (RAG) with Cohere&#39;s Command R+, Meta&#39;s Llama-3, and Ollama&#39;s Gemma, optimizing knowledge retrieval and response accuracy. Crafted an interactive interface with Streamlit to promote accessibility.</p>
+                        <a href="https://github.com/snr16/conversational-ai" class="btn btn-outline-primary mt-3" target="_blank">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+</section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container skills-container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            
+                
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i>Programming Languages</h3>
+                    <h3>
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
                     <div class="skill-items">
-                        <span class="skill-item"><i class="fab fa-python"></i>Python</span>
-                        <span class="skill-item"><i class="fab fa-js"></i>JavaScript</span>
-                        <span class="skill-item"><i class="fab fa-java"></i>Java</span>
+                        
+                            
+                            <span class="skill-item">
+                                <i class="fab fa-python"></i>
+                                Python
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-chart-line"></i>
+                                R
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-database"></i>
+                                SQL
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fab fa-java"></i>
+                                Java
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-terminal"></i>
+                                Bash Scripting
+                            </span>
+                            
+                        
                     </div>
                 </div>
                 
-                <div class="skill-category certifications">
-                    <h3><i class="fas fa-certificate"></i>Certifications</h3>
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-brain"></i>
+                        Machine Learning &amp; AI
+                    </h3>
                     <div class="skill-items">
-                        <span class="skill-item">
-                            <i class="fab fa-google"></i>
-                            <a href="#" target="_blank" class="certification-link">
-                                Google Cloud Certified
-                                <small>(2023)</small>
-                            </a>
-                        </span>
+                        
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-project-diagram"></i>
+                                TensorFlow
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-project-diagram"></i>
+                                PyTorch
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-project-diagram"></i>
+                                Scikit-learn
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-robot"></i>
+                                Langchain
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-robot"></i>
+                                LLMs
+                            </span>
+                            
+                        
                     </div>
                 </div>
+                
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-cloud"></i>
+                        Big Data &amp; Cloud
+                    </h3>
+                    <div class="skill-items">
+                        
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-database"></i>
+                                Apache Spark
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-stream"></i>
+                                Kafka
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fab fa-google"></i>
+                                Google Cloud
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fab fa-aws"></i>
+                                AWS
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-snowflake"></i>
+                                Snowflake
+                            </span>
+                            
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-tools"></i>
+                        DevOps &amp; Tools
+                    </h3>
+                    <div class="skill-items">
+                        
+                            
+                            <span class="skill-item">
+                                <i class="fab fa-docker"></i>
+                                Docker
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-cube"></i>
+                                Kubernetes
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-wind"></i>
+                                Apache Airflow
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                Git
+                            </span>
+                            
+                            <span class="skill-item">
+                                <i class="fas fa-database"></i>
+                                MySQL
+                            </span>
+                            
+                        
+                    </div>
+                </div>
+                
+            
+            
+            
+            <div class="skill-category certifications">
+                <h3><i class="fas fa-certificate"></i>Certifications & Achievements</h3>
+                <div class="skill-items">
+                    
+                    <span class="skill-item">
+                        <i class="fas fa-certificate"></i>
+                        
+                        <a href="https://www.credential.net/your-credential-id" target="_blank" class="certification-link">
+                            Google Cloud Associate Cloud Engineer
+                            
+                            <small>(2023)</small>
+                            
+                        </a>
+                        
+                    </span>
+                    
+                    <span class="skill-item">
+                        <i class="fas fa-certificate"></i>
+                        
+                        <a href="https://www.credential.net/your-credential-id" target="_blank" class="certification-link">
+                            AWS Solution Architect Associate
+                            
+                            <small>(2023)</small>
+                            
+                        </a>
+                        
+                    </span>
+                    
+                </div>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2 class="section-title">Contact Me</h2>
-            <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-                <div class="mb-3">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="mb-3">
-                    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </section>
+            
+        </div>
     </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="social-links mb-3">
+                <a href="https://github.com/snr16" class="mx-2" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/niranjansadula" class="mx-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2024 Niranjan. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- Custom JS -->
-    <script src="static/js/main.js"></script>
+    <script src="/static/js/main.js"></script>
+    
+    
 </body>
 </html> 
