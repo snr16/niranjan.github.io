@@ -26,6 +26,29 @@ python build.py
 ```
 This will create an `index.html` file in the root directory with all your information from `config.py`.
 
+## Local Development
+
+1. Set up your virtual environment (if not already done):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the development server:
+```bash
+python run.py
+```
+
+4. Open your browser and visit:
+   - http://localhost:5000
+
+The development server will automatically reload when you make changes to the code.
+
 ## Project Structure
 
 ```
@@ -149,6 +172,29 @@ The main configuration file is `app/config.py`. This contains all your portfolio
 The contact form uses Formspree. To enable:
 1. Create a form at https://formspree.io/
 2. Add your form ID to the contact form in `index.html`
+
+## Resume Management
+
+To manage your resume files:
+1. Place your resume files in `app/static/resumes/`
+2. Update the resume links in `app/config.py`:
+```python
+'personal_info': {
+    # ... other personal info ...
+    'resumes': [
+        {
+            'name': 'Resume (Software Engineer)',
+            'file': 'software_engineer_resume.pdf'
+        },
+        {
+            'name': 'Resume (Data Scientist)',
+            'file': 'data_scientist_resume.pdf'
+        }
+    ]
+}
+```
+3. If you have multiple resumes, they will appear in a dropdown menu
+4. If you have a single resume, it will appear as a direct download button
 
 ## Contributing
 

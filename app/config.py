@@ -8,7 +8,7 @@ PORTFOLIO_CONFIG = {
     'personal_info': {
         'name': 'Niranjan',
         'title': 'Machine Learning Engineer',
-        'bio': 'A passionate developer with expertise in web development and machine learning.',
+        'bio': 'A passionate developer with expertise in machine learning, data engineering, and data science.',
         'email': 'sadulaniranjan@gmail.com',
         'phone': '+1 551 998 9024',
         'location': 'Hoboken, NJ',
@@ -16,29 +16,18 @@ PORTFOLIO_CONFIG = {
         'linkedin': 'https://linkedin.com/in/niranjansadula'
     },
     'about_me': {
-        'summary': 'I am a dedicated Machine Learning Engineer with a strong foundation in computer science and a passion for creating innovative solutions. With expertise in both machine learning and software development, I strive to build scalable and intelligent applications that solve real-world problems.',
+        'summary': [
+            "I'm Niranjan, a Machine Learning Engineer with a strong background in data engineering and machine learning.",
+            "I hold a Master's in Machine Learning from Stevens Institute of Technology and a B.Tech. in Electrical Engineering from IIT Patna.",
+            "I've evolved from working with circuits to crafting sophisticated AI systems.At Quantiphi, I've built high-performance data pipelines and AI solutions that make a real difference - from automating workflows to developing real-time monitoring systems. My sweet spot? Building scalable AI systems that blend technical precision with practical impact. Whether it's fine-tuning deep learning models or orchestrating big data workflows, I bring a mix of technical expertise and creative problem-solving to every project.",
+            "Currently seeking full-time opportunities in AI, Data Science, and Data Engineering where I can contribute to building innovative and scalable solutions. Let's create something amazing together!"
+        ],
         'interests': [
-            'Machine Learning',
-            'Deep Learning',
-            'Natural Language Processing',
-            'Computer Vision',
-            'Big Data Technologies',
-            'Cloud Computing'
+            "Machine Learning",
+            "Data Engineering",
+            "Natural Language Processing",
+            "Computer Vision"
         ],
-        'core_values': [
-            'Continuous Learning',
-            'Problem Solving',
-            'Innovation',
-            'Collaboration',
-            'Clean Code',
-            'User-Centric Design'
-        ],
-        'fun_facts': [
-            'I love exploring new machine learning algorithms and implementing them in real-world applications',
-            'I enjoy participating in Kaggle competitions to sharpen my data science skills',
-            'I maintain a tech blog where I share my learning journey and insights about AI',
-            'I am passionate about mentoring others and helping them grow in their tech careers'
-        ]
     },
     'education': [
         {
@@ -84,7 +73,7 @@ PORTFOLIO_CONFIG = {
             ]
         }
     ],
-    'skills': {
+    'skills': { 
         'categories': [
             {
                 'name': 'Programming Languages',
@@ -133,16 +122,22 @@ PORTFOLIO_CONFIG = {
         ],
         'certifications': [
             {
+                'name': 'Professional Machine Learning Engineer GCP',
+                'icon': 'fas fa-certificate',
+                'date': '2023',
+                'link': 'https://www.credly.com/badges/3bbb4769-6512-43bb-b81b-44b54dc61e4d/public_url'
+            },
+            {
                 'name': 'Google Cloud Associate Cloud Engineer',
                 'icon': 'fas fa-certificate',
                 'date': '2023',
-                'link': 'https://www.credential.net/your-credential-id'
+                'link': 'https://www.credly.com/badges/86a5e5b2-5aa4-4ff8-bef8-9b8b73bf5982/public_url'
             },
             {
                 'name': 'AWS Solution Architect Associate',
                 'icon': 'fas fa-certificate',
                 'date': '2023',
-                'link': 'https://www.credential.net/your-credential-id'
+                'link': 'https://www.credly.com/badges/4e42ac26-5ce5-4664-ab05-55db7cd77ef9/public_url'
             }
         ]
     },
@@ -150,26 +145,26 @@ PORTFOLIO_CONFIG = {
         {
             'name': 'AI-Powered Fitness Tracker and Health Monitoring Bot',
             'description': 'Developed an AI-driven health monitoring bot using WHOOP API, Google Cloud, and LLMs, generating personalized insights with visualizations, reducing manual reporting by 15 hours per week, and improving user engagement.',
-            'technologies': 'Python, GCP, Docker, LLM, Langchain',
-            'github': 'https://github.com/snr16/fitness-tracker'
+            'technologies': ['Python', 'GCP', 'Docker', 'LLM', 'Langchain'],
+            'github': 'https://github.com/snr16/Whoop_bot'
         },
         {
             'name': 'Analysis of Adverse Drug Effects Using Big Data',
             'description': 'Streamlined an ELT pipeline with Apache Airflow to process 100GB of openFDA JSON data, optimizing Parquet-based storage and enhancing ML model performance, achieving 92% accuracy with a fine-tuned Multi-Layer Perceptron (MLP) model.',
-            'technologies': 'Apache Airflow, MLFlow, DataBricks',
+            'technologies': ['Apache Airflow', 'MLFlow', 'DataBricks'],
             'github': 'https://github.com/snr16/drug-effects-analysis'
         },
         {
             'name': 'Multilabel Image Classification',
             'description': 'Designed and fine-tuned a ResNet-50 model for multi-label face attribute classification on the CelebA dataset, achieving 90% validation accuracy and a 20% F1-score boost through advanced hyperparameter tuning.',
-            'technologies': 'Python, PyTorch, Sklearn, Pandas, CV2, PIL, Matplotlib',
-            'github': 'https://github.com/snr16/image-classification'
+            'technologies': ['Python', 'PyTorch', 'Sklearn', 'Pandas', 'CV2', 'PIL', 'Matplotlib'],
+            'github': 'https://github.com/snr16/CelebA_multilabel_classification'
         },
         {
             'name': 'ConversationalAI with RAG & LLMs',
             'description': 'Engineered a context-aware chatbot leveraging Retrieval-Augmented Generation (RAG) with Cohere\'s Command R+, Meta\'s Llama-3, and Ollama\'s Gemma, optimizing knowledge retrieval and response accuracy. Crafted an interactive interface with Streamlit to promote accessibility.',
-            'technologies': 'Python, LLM, Streamlit, Llamaindex',
-            'github': 'https://github.com/snr16/conversational-ai'
+            'technologies': ['Python', 'LLM', 'Streamlit', 'Llamaindex'],
+            'github': 'https://github.com/snr16/Chat-with-docs'
         }
     ],
     'theme': {
@@ -196,7 +191,17 @@ PORTFOLIO_CONFIG = {
                 'xlarge': '2rem'
             }
         }
-    }
+    },
+    'resume_links': [
+        {
+            'name': 'ML Resume',
+            'link': '/static/files/resume.pdf'
+        },
+        {
+            'name': 'Data Science Resume',
+            'link': '/static/files/resume_2.pdf'
+        }
+    ]
 }
 
 # Theme Configuration
