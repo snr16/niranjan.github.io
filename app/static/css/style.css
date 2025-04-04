@@ -545,7 +545,7 @@ section.visible {
 
 .experience-timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -588,7 +588,7 @@ section.visible {
 }
 
 .timeline-content {
-    width: 45%;
+    width: 75%;
     padding: 20px;
     background-color: var(--background-lighter);
     border-radius: 10px;
