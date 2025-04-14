@@ -165,6 +165,12 @@ PORTFOLIO_CONFIG = {
             'description': 'Engineered a context-aware chatbot leveraging Retrieval-Augmented Generation (RAG) with Cohere\'s Command R+, Meta\'s Llama-3, and Ollama\'s Gemma, optimizing knowledge retrieval and response accuracy. Crafted an interactive interface with Streamlit to promote accessibility.',
             'technologies': ['Python', 'LLM', 'Streamlit', 'Llamaindex'],
             'github': 'https://github.com/snr16/Chat-with-docs'
+        },
+         {
+            'name': 'AI Mashup Generator',
+            'description': 'Created an AI-powered music mashup tool that intelligently combines songs by analyzing tempo, key, and musical structure. Features high-quality audio separation, smart transitions, and automatic key/tempo matching, all accessible through a user-friendly Streamlit interface.',
+            'technologies': ['Python', 'LLM', 'Streamlit', 'librosa', 'pydub', 'pyaudio'],
+            'github': 'https://github.com/snr16/AI_mashup_generator'
         }
     ],
     'theme': {
