@@ -146,12 +146,6 @@ Example:
 - File: `software_engineer_resume.pdf` 
 - Displays as: "Software Engineer Resume"
 
-## Contact Form
-
-The contact form uses Formspree. To enable:
-1. Create a form at https://formspree.io/
-2. Add your form ID to the contact form in `index.html`
-
 ## Deployment
 
 1. After running `build.py`, commit and push your changes:
@@ -168,14 +162,10 @@ git push
    - Save the changes
 
 3. Your portfolio will be available at:
-   `https://snr16.github.io/niranjan.github.io/`
+   `https://yourname.github.io/niranjan.github.io/`
 
 ## Contributing
 
 Feel free to submit issues and enhancement requests!
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 
